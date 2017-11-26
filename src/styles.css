@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+
+.red-color {
+    color: red;
+}
+
+.white-color {
+    color: white;
+}
+
+.yellow-color {
+    color: yellow;
+}
+
+.gree-color {
+    color: green;
+}
+
+.vertical-center {
+    top: 17px!important;
+}
+
+.navbar-icon {
+    float: left;
+    margin-right: 16px;
+    margin-left: 5px;
+}
+
+.align-rigth {
+    float: right;
+}
