@@ -3,28 +3,46 @@
     color: red;
 }
 
+.feature-header-red {
+    background-color: red;
+}
+
+.yellow-color {
+    color: #d6d613
+}
+
+.feature-header-yellow {
+    background-color: #d6d613;
+    padding: 5px 15px 5px 15px;
+    color: white
+}
+
+.green-color {
+    color: green;
+}
+
+.feature-header-green {
+    background-color: green;
+}
+
 .white-color {
     color: white;
 }
 
-.yellow-color {
-    color: yellow;
-}
-
-.gree-color {
-    color: green;
+.feature-header {
+    display: block;
 }
 
 .vertical-center {
     top: 17px!important;
 }
 
-.navbar-icon {
+.feature-header-icon {
     float: left;
     margin-right: 16px;
     margin-left: 5px;
 }
 
-.align-rigth {
-    float: right;
+.center-text {
+    text-align: center;
 }

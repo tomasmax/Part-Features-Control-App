@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Http } from "@angular/http";
+import { PartFeaturesService } from './services/part-features.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Part Features Control App';
+
+  constructor(private partFeaturesService: PartFeaturesService) {
+
+  }
+
 }
