@@ -1,6 +1,6 @@
 //mocked data
 export const MockPartFeaturesData = {
-    
+
     "part_id":1,
     "part_name":"Part 1",
     "features":[
@@ -284,30 +284,6 @@ export const MockPartFeaturesData = {
             "feature_name":"Hole 2",
             "status":"bad",
             "controls":[
-                {
-                    "control_name":"X",
-                    "dev":0,
-                    "dev_tot":0,
-                    "status":"ok"
-                },
-                {
-                    "control_name":"Y",
-                    "dev":0,
-                    "dev_tot":0,
-                    "status":"warning"
-                },
-                {
-                    "control_name":"Z",
-                    "dev":0,
-                    "dev_tot":0,
-                    "status":"bad"
-                },
-                {
-                    "control_name":"Diameter",
-                    "dev":0,
-                    "dev_tot":0,
-                    "status":"ok"
-                },
                 {
                     "control_name":"X",
                     "dev":0,

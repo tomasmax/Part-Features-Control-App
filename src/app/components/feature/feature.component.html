@@ -1,3 +1,55 @@
-<p>
-  feature works!
-</p>
+
+    
+  <div class="feature-header">
+    <span class="glyphicon glyphicon-record feature-header-icon white-color vertical-center" aria-hidden="true"></span>
+    <h2 [ngClass]="getFeatureHeaderBarStyle()"> {{this.name}} <span [ngClass]="getFeatureHeaderBarIconStyle()" aria-hidden="true"></span></h2>
+  </div>
+
+  <div [ngClass]="getColumnsStyle()">
+    <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Control</th>
+              <th>Dev</th>
+              <th>Dev's out total</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let control of controls | slice:0:this.columnBreak, let i = index">
+                <td>{{control.control_name}}</td>
+                <td>{{control.dev}}</td>
+                <td>{{control.dev_tot}}</td>
+                <td><span [ngClass]="getControlsIconStyle(control.status)" aria-hidden="true"></span></td>
+              </tr>
+          </tbody>
+          
+        </table>
+      </div>
+  </div>
+
+  <div *ngIf=" controls.length > this.columnBreak " [ngClass]="getColumnsStyle()">
+      <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Control</th>
+                <th>Dev</th>
+                <th>Dev's out total</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let control of controls | slice:this.columnBreak:controls.length, let i = index">
+                  <td>{{control.control_name}}</td>
+                  <td>{{control.dev}}</td>
+                  <td>{{control.dev_tot}}</td>
+                  <td><span [ngClass]="getControlsIconStyle(control.status)" aria-hidden="true"></span></td>
+                </tr>
+            </tbody>
+            
+          </table>
+        </div>
+    </div>
+

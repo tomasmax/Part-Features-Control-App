@@ -8,13 +8,15 @@ import { FeatureComponent } from './components/feature/feature.component';
 import { ControlMeasurementsComponent } from './components/control-measurements/control-measurements.component';
 
 import { PartFeaturesService } from './services/part-features.service';
+import { ControlsColumnDividerPipe } from './pipes/controls-column-divider.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     PartComponent,
     FeatureComponent,
-    ControlMeasurementsComponent
+    ControlMeasurementsComponent,
+    ControlsColumnDividerPipe
   ],
   imports: [
     BrowserModule

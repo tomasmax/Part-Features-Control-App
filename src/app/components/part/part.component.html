@@ -1,102 +1,13 @@
-<div class="row">
+
+<div class="row" *ngIf="featureList.length > 0">
+
+  <div *ngFor="let feature of featureList, let i = index">
+
     <div class="col-xs-12 col-sm-6 col-md-6">
 
-        <div class="feature-header">
-            <span class="glyphicon glyphicon-record feature-header-icon white-color vertical-center" aria-hidden="true"></span>
-            <h2 class="sub-header feature-header-yellow">Feature's Name <span class="glyphicon glyphicon-remove-circle white-color" aria-hidden="true"></span></h2>
-        </div>
-
-        <div class="col-xs-12 col-sm-6">
-          <div class="table-responsive">
-              <table class="table center-text">
-                <thead>
-                  <tr>
-                    <th>Control</th>
-                    <th>Dev</th>
-                    <th>Dev's out total</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>X</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td><span class="glyphicon glyphicon-remove-circle red-color" aria-hidden="true"></span></td>
-                  </tr>
-                  <tr>
-                    <td>Y</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td><span class="glyphicon glyphicon-ok-circle green-color" aria-hidden="true"></span></td>
-                  </tr>
-                  <tr>
-                    <td>Z</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td><span class="glyphicon glyphicon-time yellow-color" aria-hidden="true"></span></td>
-                  </tr>
-                  <tr>
-                    <td>Diameter</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td><span class="glyphicon glyphicon-ok-circle green-color" aria-hidden="true"></span></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-6">
-            <div class="table-responsive center-text">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>Control</th>
-                      <th>Dev</th>
-                      <th>Dev's out total</th>
-                      <th></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>X</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td><span class="glyphicon glyphicon-remove-circle red-color" aria-hidden="true"></span></td>
-                    </tr>
-                    <tr>
-                      <td>Y</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td><span class="glyphicon glyphicon-ok-circle green-color" aria-hidden="true"></span></td>
-                    </tr>
-                    <tr>
-                      <td>Z</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td><span class="glyphicon glyphicon-time yellow-color" aria-hidden="true"></span></td>
-                    </tr>
-                    <tr>
-                      <td>Diameter</td>
-                      <td>0</td>
-                      <td>0</td>
-                      <td><span class="glyphicon glyphicon-ok-circle green-color" aria-hidden="true"></span></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-        </div>
+      <part-feature [id]="feature.feature_id" [name]="feature.feature_name" [status]="feature.status" [controls]="feature.controls"></part-feature>
 
     </div>
-
-    <!-- Add the extra clearfix for only the required viewport -->
-    <div class="clearfix visible-xs-block"></div>
-
-    <div class="col-xs-12 col-sm-6 col-md-6">
       
-        col-xs-12 col-sm-6 col-md-6
-
-    </div>
-  
   </div>
+</div>

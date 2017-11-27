@@ -7,6 +7,7 @@ import { PartFeaturesService } from '../../services/part-features.service'
   styleUrls: ['./part.component.css']
 })
 export class PartComponent implements OnInit {
+  partName: string;
   featureList: Array<Object> = [];
 
   constructor(
@@ -21,11 +22,23 @@ export class PartComponent implements OnInit {
     this.partFeaturesService.getPartFeaturesData()
       .subscribe(
         response => {
-          console.log('Part Features');
-          console.log(response.features);
           this.featureList = response.features;
+          this.partName = response.part_name;
+          console.log(`Part Component ${this.partName} data feched`);
+          console.log(this.featureList);
         });
 
+  }
+
+  checkFeaturesControlColumns() {
+    
+  }
+
+  getGridStyle() {
+    if (this.featureList.length > 2) {
+      
+      
+    } 
   }
 
 }
