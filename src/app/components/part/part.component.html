@@ -3,11 +3,41 @@
 
   <div *ngFor="let feature of featureList, let i = index">
 
-    <div class="col-xs-12 col-sm-6 col-md-6">
+    <div *ngIf="i <= 4">
+      <div class="col-xs-12 col-sm-6 col-md-6" *ngIf="checkFeaturesControlColumns(i)">
 
-      <part-feature [id]="feature.feature_id" [name]="feature.feature_name" [status]="feature.status" [controls]="feature.controls"></part-feature>
+        <part-feature [id]="feature.feature_id" [name]="feature.feature_name" [status]="feature.status" [controls]="feature.controls"></part-feature>
+
+      </div>
+      <div class="col-xs-12 col-sm-3 col-md-3" *ngIf="!checkFeaturesControlColumns(i)">
+          
+        <part-feature [id]="feature.feature_id" [name]="feature.feature_name" [status]="feature.status" [controls]="feature.controls"></part-feature>
+          
+      </div>
+      
+    </div>
 
     </div>
-      
-  </div>
 </div>
+
+<div class="row" *ngIf="featureList.length > 4">
+
+    <div *ngFor="let feature of featureList, let i = index">
+        <div *ngIf="i > 4">
+            <div class="col-xs-12 col-sm-6 col-md-6" *ngIf="checkFeaturesControlColumns(i)">
+      
+              <part-feature [id]="feature.feature_id" [name]="feature.feature_name" [status]="feature.status" [controls]="feature.controls"></part-feature>
+      
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3" *ngIf="!checkFeaturesControlColumns(i)">
+                
+              <part-feature [id]="feature.feature_id" [name]="feature.feature_name" [status]="feature.status" [controls]="feature.controls"></part-feature>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    
+  </div>
+

@@ -37,6 +37,9 @@ Angular utilizes RxJS which is essentially a javascript implementation of reacti
 
 Another TODO's would be:
 
+* Improve UI Grid system to response better to different configurations of features / controls...
+* Add information in the top bar about how many pieces are being created.
+* Add charts with more info.
 * Create a main page to choose between different pieces / parts and access to their dashboard.
 * Add Angular router to create a navigation flow within the app.
 

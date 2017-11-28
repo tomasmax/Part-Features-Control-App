@@ -157,6 +157,85 @@ export const MockPartFeaturesData = {
         },
         {
             "feature_id":2,
+           "feature_name":"Hole",
+           "status":"bad",
+           "controls":[
+               {
+                   "control_name":"X",
+                   "dev":0,
+                   "dev_tot":0,
+                   "status":"ok"
+               },
+               {
+                   "control_name":"Y",
+                   "dev":0,
+                   "dev_tot":0,
+                   "status":"warning"
+               },
+               {
+                   "control_name":"Z",
+                   "dev":0,
+                   "dev_tot":0,
+                   "status":"bad"
+               },
+               {
+                   "control_name":"Diameter",
+                   "dev":0,
+                   "dev_tot":0,
+                   "status":"ok"
+               },
+               {
+                   "control_name":"X",
+                   "dev":0,
+                   "dev_tot":0,
+                   "status":"ok"
+               },
+               {
+                   "control_name":"Y",
+                   "dev":0,
+                   "dev_tot":0,
+                   "status":"warning"
+               },
+               {
+                   "control_name":"Z",
+                   "dev":0,
+                   "dev_tot":0,
+                   "status":"bad"
+               },
+               {
+                   "control_name":"Diameter",
+                   "dev":0,
+                   "dev_tot":0,
+                   "status":"ok"
+               },
+               {
+                   "control_name":"X",
+                   "dev":0,
+                   "dev_tot":0,
+                   "status":"ok"
+               },
+               {
+                   "control_name":"Y",
+                   "dev":0,
+                   "dev_tot":0,
+                   "status":"warning"
+               },
+               {
+                   "control_name":"Z",
+                   "dev":0,
+                   "dev_tot":0,
+                   "status":"bad"
+               },
+               {
+                   "control_name":"Diameter",
+                   "dev":0,
+                   "dev_tot":0,
+                   "status":"ok"
+               }
+           ]  
+       },   
+        {
+            "feature_id":3,
             "feature_name":"Slot",
             "status":"ok",
             "controls":[
@@ -187,8 +266,8 @@ export const MockPartFeaturesData = {
             ] 
         },
         {
-            "feature_id":3,
-            "feature_name":"Hole",
+            "feature_id":4,
+            "feature_name":"Hole 2",
             "status":"warning",
             "controls":[
                 {
@@ -216,148 +295,8 @@ export const MockPartFeaturesData = {
                     "status":"ok"
                 }
             ]  
-        },
-        {
-            "feature_id":4,
-            "feature_name":"Slot 2",
-            "status":"bad",
-            "controls":[
-                {
-                    "control_name":"X",
-                    "dev":0,
-                    "dev_tot":0,
-                    "status":"ok"
-                },
-                {
-                    "control_name":"Y",
-                    "dev":0,
-                    "dev_tot":0,
-                    "status":"warning"
-                },
-                {
-                    "control_name":"Z",
-                    "dev":0,
-                    "dev_tot":0,
-                    "status":"bad"
-                },
-                {
-                    "control_name":"Diameter",
-                    "dev":0,
-                    "dev_tot":0,
-                    "status":"ok"
-                }
-            ]  
-        },
-        {
-            "feature_id":5,
-            "feature_name":"Seam 2",
-            "status":"ok",
-            "controls":[
-                {
-                    "control_name":"X",
-                    "dev":0,
-                    "dev_tot":0,
-                    "status":"ok"
-                },
-                {
-                    "control_name":"Y",
-                    "dev":0,
-                    "dev_tot":0,
-                    "status":"warning"
-                },
-                {
-                    "control_name":"Z",
-                    "dev":0,
-                    "dev_tot":0,
-                    "status":"bad"
-                },
-                {
-                    "control_name":"Diameter",
-                    "dev":0,
-                    "dev_tot":0,
-                    "status":"ok"
-                }
-            ]  
-        },
-        {
-             "feature_id":6,
-            "feature_name":"Hole 2",
-            "status":"bad",
-            "controls":[
-                {
-                    "control_name":"X",
-                    "dev":0,
-                    "dev_tot":0,
-                    "status":"ok"
-                },
-                {
-                    "control_name":"Y",
-                    "dev":0,
-                    "dev_tot":0,
-                    "status":"warning"
-                },
-                {
-                    "control_name":"Z",
-                    "dev":0,
-                    "dev_tot":0,
-                    "status":"bad"
-                },
-                {
-                    "control_name":"Diameter",
-                    "dev":0,
-                    "dev_tot":0,
-                    "status":"ok"
-                },
-                {
-                    "control_name":"X",
-                    "dev":0,
-                    "dev_tot":0,
-                    "status":"ok"
-                },
-                {
-                    "control_name":"Y",
-                    "dev":0,
-                    "dev_tot":0,
-                    "status":"warning"
-                },
-                {
-                    "control_name":"Z",
-                    "dev":0,
-                    "dev_tot":0,
-                    "status":"bad"
-                },
-                {
-                    "control_name":"Diameter",
-                    "dev":0,
-                    "dev_tot":0,
-                    "status":"ok"
-                },
-                {
-                    "control_name":"X",
-                    "dev":0,
-                    "dev_tot":0,
-                    "status":"ok"
-                },
-                {
-                    "control_name":"Y",
-                    "dev":0,
-                    "dev_tot":0,
-                    "status":"warning"
-                },
-                {
-                    "control_name":"Z",
-                    "dev":0,
-                    "dev_tot":0,
-                    "status":"bad"
-                },
-                {
-                    "control_name":"Diameter",
-                    "dev":0,
-                    "dev_tot":0,
-                    "status":"ok"
-                }
-            ]  
-        }   
+        }
+        
     ]
 }
 
@@ -369,7 +308,7 @@ export const MockPartFeaturesData1 = {
             {
                 "feature_id":1,
                 "feature_name":"Seam",
-                "status":"warning",
+                "status":"ok",
                 "controls":[
                     {
                         "control_name":"X",
@@ -519,6 +458,85 @@ export const MockPartFeaturesData1 = {
             },
             {
                 "feature_id":2,
+               "feature_name":"Hole",
+               "status":"ok",
+               "controls":[
+                   {
+                       "control_name":"X",
+                       "dev":1,
+                       "dev_tot":1,
+                       "status":"warning"
+                   },
+                   {
+                       "control_name":"Y",
+                       "dev":1,
+                       "dev_tot":1,
+                       "status":"warning"
+                   },
+                   {
+                       "control_name":"Z",
+                       "dev":1,
+                       "dev_tot":1,
+                       "status":"ok"
+                   },
+                   {
+                       "control_name":"Diameter",
+                       "dev":1,
+                       "dev_tot":1,
+                       "status":"warning"
+                   },
+                   {
+                       "control_name":"X",
+                       "dev":1,
+                       "dev_tot":1,
+                       "status":"warning"
+                   },
+                   {
+                       "control_name":"Y",
+                       "dev":1,
+                       "dev_tot":1,
+                       "status":"warning"
+                   },
+                   {
+                       "control_name":"Z",
+                       "dev":1,
+                       "dev_tot":1,
+                       "status":"ok"
+                   },
+                   {
+                       "control_name":"Diameter",
+                       "dev":1,
+                       "dev_tot":1,
+                       "status":"warning"
+                   },
+                   {
+                       "control_name":"X",
+                       "dev":1,
+                       "dev_tot":1,
+                       "status":"warning"
+                   },
+                   {
+                       "control_name":"Y",
+                       "dev":1,
+                       "dev_tot":1,
+                       "status":"warning"
+                   },
+                   {
+                       "control_name":"Z",
+                       "dev":1,
+                       "dev_tot":1,
+                       "status":"ok"
+                   },
+                   {
+                       "control_name":"Diameter",
+                       "dev":1,
+                       "dev_tot":1,
+                       "status":"warning"
+                   }
+               ]  
+           },
+            {
+                "feature_id":3,
                 "feature_name":"Slot",
                 "status":"warning",
                 "controls":[
@@ -549,40 +567,9 @@ export const MockPartFeaturesData1 = {
                 ] 
             },
             {
-                "feature_id":3,
-                "feature_name":"Hole",
-                "status":"warning",
-                "controls":[
-                    {
-                        "control_name":"X",
-                        "dev":1,
-                        "dev_tot":1,
-                        "status":"warning"
-                    },
-                    {
-                        "control_name":"Y",
-                        "dev":1,
-                        "dev_tot":1,
-                        "status":"warning"
-                    },
-                    {
-                        "control_name":"Z",
-                        "dev":1,
-                        "dev_tot":1,
-                        "status":"ok"
-                    },
-                    {
-                        "control_name":"Diameter",
-                        "dev":1,
-                        "dev_tot":1,
-                        "status":"warning"
-                    }
-                ]  
-            },
-            {
                 "feature_id":4,
-                "feature_name":"Slot 2",
-                "status":"ok",
+                "feature_name":"Hole",
+                "status":"bad",
                 "controls":[
                     {
                         "control_name":"X",
@@ -609,117 +596,7 @@ export const MockPartFeaturesData1 = {
                         "status":"warning"
                     }
                 ]  
-            },
-            {
-                "feature_id":5,
-                "feature_name":"Seam 2",
-                "status":"warning",
-                "controls":[
-                    {
-                        "control_name":"X",
-                        "dev":1,
-                        "dev_tot":1,
-                        "status":"warning"
-                    },
-                    {
-                        "control_name":"Y",
-                        "dev":1,
-                        "dev_tot":1,
-                        "status":"warning"
-                    },
-                    {
-                        "control_name":"Z",
-                        "dev":1,
-                        "dev_tot":1,
-                        "status":"ok"
-                    },
-                    {
-                        "control_name":"Diameter",
-                        "dev":1,
-                        "dev_tot":1,
-                        "status":"warning"
-                    }
-                ]  
-            },
-            {
-                 "feature_id":6,
-                "feature_name":"Hole 2",
-                "status":"ok",
-                "controls":[
-                    {
-                        "control_name":"X",
-                        "dev":1,
-                        "dev_tot":1,
-                        "status":"warning"
-                    },
-                    {
-                        "control_name":"Y",
-                        "dev":1,
-                        "dev_tot":1,
-                        "status":"warning"
-                    },
-                    {
-                        "control_name":"Z",
-                        "dev":1,
-                        "dev_tot":1,
-                        "status":"ok"
-                    },
-                    {
-                        "control_name":"Diameter",
-                        "dev":1,
-                        "dev_tot":1,
-                        "status":"warning"
-                    },
-                    {
-                        "control_name":"X",
-                        "dev":1,
-                        "dev_tot":1,
-                        "status":"warning"
-                    },
-                    {
-                        "control_name":"Y",
-                        "dev":1,
-                        "dev_tot":1,
-                        "status":"warning"
-                    },
-                    {
-                        "control_name":"Z",
-                        "dev":1,
-                        "dev_tot":1,
-                        "status":"ok"
-                    },
-                    {
-                        "control_name":"Diameter",
-                        "dev":1,
-                        "dev_tot":1,
-                        "status":"warning"
-                    },
-                    {
-                        "control_name":"X",
-                        "dev":1,
-                        "dev_tot":1,
-                        "status":"warning"
-                    },
-                    {
-                        "control_name":"Y",
-                        "dev":1,
-                        "dev_tot":1,
-                        "status":"warning"
-                    },
-                    {
-                        "control_name":"Z",
-                        "dev":1,
-                        "dev_tot":1,
-                        "status":"ok"
-                    },
-                    {
-                        "control_name":"Diameter",
-                        "dev":1,
-                        "dev_tot":1,
-                        "status":"warning"
-                    }
-                ]  
-            }   
+            }
         ]
     }
 
@@ -729,9 +606,9 @@ export const MockPartFeaturesData1 = {
             "part_name":"Part 1",
             "features":[
                 {
-                    "feature_id":2,
+                    "feature_id":1,
                     "feature_name":"Seam",
-                    "status":"bad",
+                    "status":"warning",
                     "controls":[
                         {
                             "control_name":"X",
@@ -881,8 +758,87 @@ export const MockPartFeaturesData1 = {
                 },
                 {
                     "feature_id":2,
+                    "feature_name":"Hole",
+                    "status":"ok",
+                    "controls":[
+                        {
+                            "control_name":"X",
+                            "dev":2,
+                            "dev_tot":2,
+                            "status":"bad"
+                        },
+                        {
+                            "control_name":"Y",
+                            "dev":2,
+                            "dev_tot":2,
+                            "status":"bad"
+                        },
+                        {
+                            "control_name":"Z",
+                            "dev":2,
+                            "dev_tot":2,
+                            "status":"ok"
+                        },
+                        {
+                            "control_name":"Diameter",
+                            "dev":2,
+                            "dev_tot":2,
+                            "status":"bad"
+                        },
+                        {
+                            "control_name":"X",
+                            "dev":2,
+                            "dev_tot":2,
+                            "status":"bad"
+                        },
+                        {
+                            "control_name":"Y",
+                            "dev":2,
+                            "dev_tot":2,
+                            "status":"bad"
+                        },
+                        {
+                            "control_name":"Z",
+                            "dev":2,
+                            "dev_tot":2,
+                            "status":"ok"
+                        },
+                        {
+                            "control_name":"Diameter",
+                            "dev":2,
+                            "dev_tot":2,
+                            "status":"bad"
+                        },
+                        {
+                            "control_name":"X",
+                            "dev":2,
+                            "dev_tot":2,
+                            "status":"bad"
+                        },
+                        {
+                            "control_name":"Y",
+                            "dev":2,
+                            "dev_tot":2,
+                            "status":"bad"
+                        },
+                        {
+                            "control_name":"Z",
+                            "dev":2,
+                            "dev_tot":2,
+                            "status":"ok"
+                        },
+                        {
+                            "control_name":"Diameter",
+                            "dev":2,
+                            "dev_tot":2,
+                            "status":"bad"
+                        }
+                    ]  
+                },
+                {
+                    "feature_id":3,
                     "feature_name":"Slot",
-                    "status":"bad",
+                    "status":"warning",
                     "controls":[
                         {
                             "control_name":"X",
@@ -911,151 +867,10 @@ export const MockPartFeaturesData1 = {
                     ] 
                 },
                 {
-                    "feature_id":3,
-                    "feature_name":"Hole",
-                    "status":"bad",
-                    "controls":[
-                        {
-                            "control_name":"X",
-                            "dev":2,
-                            "dev_tot":2,
-                            "status":"bad"
-                        },
-                        {
-                            "control_name":"Y",
-                            "dev":2,
-                            "dev_tot":2,
-                            "status":"bad"
-                        },
-                        {
-                            "control_name":"Z",
-                            "dev":2,
-                            "dev_tot":2,
-                            "status":"ok"
-                        },
-                        {
-                            "control_name":"Diameter",
-                            "dev":2,
-                            "dev_tot":2,
-                            "status":"bad"
-                        }
-                    ]  
-                },
-                {
                     "feature_id":4,
-                    "feature_name":"Slot 2",
-                    "status":"ok",
-                    "controls":[
-                        {
-                            "control_name":"X",
-                            "dev":2,
-                            "dev_tot":2,
-                            "status":"bad"
-                        },
-                        {
-                            "control_name":"Y",
-                            "dev":2,
-                            "dev_tot":2,
-                            "status":"bad"
-                        },
-                        {
-                            "control_name":"Z",
-                            "dev":2,
-                            "dev_tot":2,
-                            "status":"ok"
-                        },
-                        {
-                            "control_name":"Diameter",
-                            "dev":2,
-                            "dev_tot":2,
-                            "status":"bad"
-                        }
-                    ]  
-                },
-                {
-                    "feature_id":5,
-                    "feature_name":"Seam 2",
+                    "feature_name":"Hole 2",
                     "status":"bad",
                     "controls":[
-                        {
-                            "control_name":"X",
-                            "dev":2,
-                            "dev_tot":2,
-                            "status":"bad"
-                        },
-                        {
-                            "control_name":"Y",
-                            "dev":2,
-                            "dev_tot":2,
-                            "status":"bad"
-                        },
-                        {
-                            "control_name":"Z",
-                            "dev":2,
-                            "dev_tot":2,
-                            "status":"ok"
-                        },
-                        {
-                            "control_name":"Diameter",
-                            "dev":2,
-                            "dev_tot":2,
-                            "status":"bad"
-                        }
-                    ]  
-                },
-                {
-                     "feature_id":6,
-                    "feature_name":"Hole 2",
-                    "status":"ok",
-                    "controls":[
-                        {
-                            "control_name":"X",
-                            "dev":2,
-                            "dev_tot":2,
-                            "status":"bad"
-                        },
-                        {
-                            "control_name":"Y",
-                            "dev":2,
-                            "dev_tot":2,
-                            "status":"bad"
-                        },
-                        {
-                            "control_name":"Z",
-                            "dev":2,
-                            "dev_tot":2,
-                            "status":"ok"
-                        },
-                        {
-                            "control_name":"Diameter",
-                            "dev":2,
-                            "dev_tot":2,
-                            "status":"bad"
-                        },
-                        {
-                            "control_name":"X",
-                            "dev":2,
-                            "dev_tot":2,
-                            "status":"bad"
-                        },
-                        {
-                            "control_name":"Y",
-                            "dev":2,
-                            "dev_tot":2,
-                            "status":"bad"
-                        },
-                        {
-                            "control_name":"Z",
-                            "dev":2,
-                            "dev_tot":2,
-                            "status":"ok"
-                        },
-                        {
-                            "control_name":"Diameter",
-                            "dev":2,
-                            "dev_tot":2,
-                            "status":"bad"
-                        },
                         {
                             "control_name":"X",
                             "dev":2,
@@ -1092,7 +907,7 @@ export const MockPartFeaturesData1 = {
                 "part_name":"Part 1",
                 "features":[
                     {
-                        "feature_id":2,
+                        "feature_id":1,
                         "feature_name":"Seam",
                         "status":"warning",
                         "controls":[
@@ -1244,8 +1059,87 @@ export const MockPartFeaturesData1 = {
                     },
                     {
                         "feature_id":2,
+                       "feature_name":"Hole",
+                       "status":"warning",
+                       "controls":[
+                           {
+                               "control_name":"X",
+                               "dev":0,
+                               "dev_tot":6,
+                               "status":"bad"
+                           },
+                           {
+                               "control_name":"Y",
+                               "dev":2,
+                               "dev_tot":6,
+                               "status":"bad"
+                           },
+                           {
+                               "control_name":"Z",
+                               "dev":2,
+                               "dev_tot":6,
+                               "status":"bad"
+                           },
+                           {
+                               "control_name":"Diameter",
+                               "dev":2,
+                               "dev_tot":2,
+                               "status":"warning"
+                           },
+                           {
+                               "control_name":"X",
+                               "dev":2,
+                               "dev_tot":6,
+                               "status":"warning"
+                           },
+                           {
+                               "control_name":"Y",
+                               "dev":2,
+                               "dev_tot":4,
+                               "status":"bad"
+                           },
+                           {
+                               "control_name":"Z",
+                               "dev":0,
+                               "dev_tot":2,
+                               "status":"ok"
+                           },
+                           {
+                               "control_name":"Diameter",
+                               "dev":2,
+                               "dev_tot":2,
+                               "status":"warning"
+                           },
+                           {
+                               "control_name":"X",
+                               "dev":2,
+                               "dev_tot":2,
+                               "status":"bad"
+                           },
+                           {
+                               "control_name":"Y",
+                               "dev":3,
+                               "dev_tot":5,
+                               "status":"ok"
+                           },
+                           {
+                               "control_name":"Z",
+                               "dev":2,
+                               "dev_tot":2,
+                               "status":"ok"
+                           },
+                           {
+                               "control_name":"Diameter",
+                               "dev":0,
+                               "dev_tot":0,
+                               "status":"ok"
+                           }
+                       ]  
+                   },
+                    {
+                        "feature_id":3,
                         "feature_name":"Slot",
-                        "status":"ok",
+                        "status":"bad",
                         "controls":[
                             {
                                 "control_name":"X",
@@ -1274,8 +1168,8 @@ export const MockPartFeaturesData1 = {
                         ] 
                     },
                     {
-                        "feature_id":3,
-                        "feature_name":"Hole",
+                        "feature_id":4,
+                        "feature_name":"Hole 2",
                         "status":"ok",
                         "controls":[
                             {
@@ -1303,147 +1197,6 @@ export const MockPartFeaturesData1 = {
                                 "status":"ok"
                             }
                         ]  
-                    },
-                    {
-                        "feature_id":4,
-                        "feature_name":"Slot 2",
-                        "status":"warning",
-                        "controls":[
-                            {
-                                "control_name":"X",
-                                "dev":2,
-                                "dev_tot":0,
-                                "status":"bad"
-                            },
-                            {
-                                "control_name":"Y",
-                                "dev":2,
-                                "dev_tot":4,
-                                "status":"bad"
-                            },
-                            {
-                                "control_name":"Z",
-                                "dev":0,
-                                "dev_tot":4,
-                                "status":"bad"
-                            },
-                            {
-                                "control_name":"Diameter",
-                                "dev":2,
-                                "dev_tot":8,
-                                "status":"warniing"
-                            }
-                        ]  
-                    },
-                    {
-                        "feature_id":5,
-                        "feature_name":"Seam 2",
-                        "status":"ok",
-                        "controls":[
-                            {
-                                "control_name":"X",
-                                "dev":2,
-                                "dev_tot":2,
-                                "status":"warning"
-                            },
-                            {
-                                "control_name":"Y",
-                                "dev":5,
-                                "dev_tot":7,
-                                "status":"bad"
-                            },
-                            {
-                                "control_name":"Z",
-                                "dev":0,
-                                "dev_tot":0,
-                                "status":"ok"
-                            },
-                            {
-                                "control_name":"Diameter",
-                                "dev":2,
-                                "dev_tot":2,
-                                "status":"bad"
-                            }
-                        ]  
-                    },
-                    {
-                         "feature_id":6,
-                        "feature_name":"Hole 2",
-                        "status":"warning",
-                        "controls":[
-                            {
-                                "control_name":"X",
-                                "dev":0,
-                                "dev_tot":6,
-                                "status":"bad"
-                            },
-                            {
-                                "control_name":"Y",
-                                "dev":2,
-                                "dev_tot":6,
-                                "status":"bad"
-                            },
-                            {
-                                "control_name":"Z",
-                                "dev":2,
-                                "dev_tot":6,
-                                "status":"bad"
-                            },
-                            {
-                                "control_name":"Diameter",
-                                "dev":2,
-                                "dev_tot":2,
-                                "status":"warning"
-                            },
-                            {
-                                "control_name":"X",
-                                "dev":2,
-                                "dev_tot":6,
-                                "status":"warning"
-                            },
-                            {
-                                "control_name":"Y",
-                                "dev":2,
-                                "dev_tot":4,
-                                "status":"bad"
-                            },
-                            {
-                                "control_name":"Z",
-                                "dev":0,
-                                "dev_tot":2,
-                                "status":"ok"
-                            },
-                            {
-                                "control_name":"Diameter",
-                                "dev":2,
-                                "dev_tot":2,
-                                "status":"warning"
-                            },
-                            {
-                                "control_name":"X",
-                                "dev":2,
-                                "dev_tot":2,
-                                "status":"bad"
-                            },
-                            {
-                                "control_name":"Y",
-                                "dev":3,
-                                "dev_tot":5,
-                                "status":"ok"
-                            },
-                            {
-                                "control_name":"Z",
-                                "dev":2,
-                                "dev_tot":2,
-                                "status":"ok"
-                            },
-                            {
-                                "control_name":"Diameter",
-                                "dev":0,
-                                "dev_tot":0,
-                                "status":"ok"
-                            }
-                        ]  
-                    }   
+                    }  
                 ]
             }

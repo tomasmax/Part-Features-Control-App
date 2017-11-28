@@ -49,15 +49,28 @@ export class PartComponent implements OnInit, OnDestroy {
       });
   }
 
-  checkFeaturesControlColumns() {
+  public checkFeaturesControlColumns(index) {
     
+    if (this.featureList[index].hasOwnProperty('controls')) {
+      if (this.featureList[index]['controls'].length > 12) {
+        return true;
+      }
+    }  
+    return false;
   }
 
   getGridStyle() {
-    if (this.featureList.length > 2) {
+    if (this.featureList.length <= 2) {
+      if (this.checkFeaturesControlColumns) {
+
+      }
       
-      
-    } 
+    } else if (this.featureList.length <= 4) {
+
+
+    } else if (this.featureList.length <= 6) {
+
+    }
   }
 
 }
