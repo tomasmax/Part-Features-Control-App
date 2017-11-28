@@ -9,7 +9,7 @@ This web app is a simulation of a Dashboard. It shows some measurements of every
 Considering that the interface needs to be refreshed every time a piece is produced, event received
 on the backend.
 
-To solve this problem I followed Best Practices and patterns: I used an observable data service that can be used to provide data to multiple parts of the application. This is the correct path to follow, because we are receiving the refresh event from the Back End, and the Service is the one that communicates with the backend.
+To solve this problem I followed some Best Practices and patterns: I used an observable data service that can be used to provide data to multiple parts of the application. This is the correct path to follow, because we are receiving the refresh event from the Back End, and the Service is the one that communicates with the backend.
 
 A Subject is both an Observable (so we can subscribe() to it) and an Observer (so we can call next() on it to emit a new value). We exploit this feature. A Subject allows values to be multicast to many Observers.
 
